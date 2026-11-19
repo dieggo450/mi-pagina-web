@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mongolia Aventura</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon.png">
+    <link rel="apple-touch-icon" href="Imagenes/icono.png">
+    <meta name="description" content="Contacta con Mongolia Aventura para solicitar información sobre viajes y experiencias en Mongolia.">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacta con nosotros</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Ocio.html">Ocio</a>
+            <a href="Fauna.html">Fauna y gastronomía</a>
+            <a href="SobreNosotros.html">Quiénes somos</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Solicita información</h2>
+            <p>Rellena el siguiente formulario y cuéntanos qué tipo de viaje o experiencia te interesa.</p>
+
+            <form action="gracias.html" method="get">
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del viaje</legend>
+
+                    <label for="destino">¿Qué zona te interesa?</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Selecciona una zona</option>
+                        <option value="gobi">Desierto del Gobi</option>
+                        <option value="altai">Montañas del Altái</option>
+                        <option value="estepas">Estepas centrales</option>
+                        <option value="norte">Norte de Mongolia</option>
+                    </select>
+
+                    <p>¿Cómo desea que contactemos con usted?</p>
+                    <input type="radio" id="email" name="contacto" value="email" required>
+                    <label for="email">Correo electronico</label>
+
+                    <input type="radio" id="tlf" name="contacto" value="tlf">
+                    <label for="tlf">Teléfono</label>
+
+                    <input type="radio" id="otros" name="contacto" value="otros">
+                    <label for="otros">Otro</label>
+
+                    <p>¿Qué tipo de consulta quieres realizar?</p>
+                    <input type="checkbox" id="viaje" name="actividades" value="viaje">
+                    <label for="viaje">Viaje | Hotel</label>
+
+                    <input type="checkbox" id="Ocio" name="actividades" value="Ocio">
+                    <label for="Ocio">Ocio | Gastronomia</label>
+
+                    <input type="checkbox" id="otros" name="actividades" value="otros">
+                    <label for="otros">Otros Servicios</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En qué podemos ayudarte?</legend>
+                    <label for="mensaje">Haznos saber tu duda</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mongolia Aventura</p>
+    </footer>
+</body>
+</html>
