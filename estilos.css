@@ -1,0 +1,252 @@
+/* MONGOLIA AVENTURA */
+
+/* Variables de colores */
+:root {
+    --color-principal: #8b2e24;
+    --color-secundario: #d9a441;
+    --color-fondo: #f5f1e8;
+    --color-texto: #292722;
+    --color-borde: #d8cdbb;
+    --radio: 10px;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background-color: var(--color-principal);
+    background-image: linear-gradient(135deg, #6f211b, #a64a32);
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+/* Menú de navegación */
+nav {
+    padding: 12px;
+    background-color: #5d211b;
+    border-radius: var(--radio);
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section,
+article,
+aside {
+    margin-bottom: 22px;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+}
+
+/* Títulos y textos */
+h2 {
+    color: var(--color-principal);
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--color-principal);
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+/* Listas */
+ul,
+ol {
+    padding-left: 28px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    margin: 18px 0;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption {
+    margin-bottom: 8px;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    text-align: left;
+}
+
+th {
+    color: white;
+    background-color: var(--color-principal);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio);
+}
+
+/* Formularios */
+form {
+    margin-top: 18px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+}
+
+legend {
+    padding: 0 8px;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 8px 8px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 4px 0 12px;
+    padding: 10px;
+    border: 1px solid #b9ad9b;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 8px 5px 8px 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botones */
+button {
+    padding: 11px 20px;
+    color: white;
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5d211b;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-principal);
+}
+
+/* Foco visible */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--color-secundario);
+    outline-offset: 2px;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 30px;
+    padding: 18px;
+    color: white;
+    background-color: #342b25;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
