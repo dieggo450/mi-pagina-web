@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Mongolia Aventura</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon.png">
+    <title>Contacto Mongolia Aventura</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicom.webp">
     <link rel="apple-touch-icon" href="Imagenes/icono.png">
-    <meta name="description" content="Contacta con Mongolia Aventura para solicitar información sobre viajes y experiencias en Mongolia.">
+    <meta name="description"
+        content="Contacta con Mongolia Aventura para solicitar información sobre viajes y experiencias en Mongolia.">
     <link rel="stylesheet" href="estilos.css">
+
 </head>
+
 <body>
     <header>
         <h1>Contacta con nosotros</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="Ocio.html">Ocio</a>
-            <a href="Fauna.html">Fauna y gastronomía</a>
+            <a href="FaunayGastronomia.html">Fauna y gastronomía</a>
+            <a href="noticias.xml">Noticias</a>
             <a href="SobreNosotros.html">Quiénes somos</a>
             <a href="Contacto.html">Contacto</a>
+            <a href="https://es.wikipedia.org/wiki/Mongolia" target="_blank" rel="noopener">Info Externa.</a>
         </nav>
     </header>
 
@@ -43,6 +49,9 @@
                 <fieldset>
                     <legend>Información del viaje</legend>
 
+                    <label for="viajeros">Número de viajeros:</label>
+                    <input type="number" id="viajeros" name="viajeros" min="1" max="12" required>
+
                     <label for="destino">¿Qué zona te interesa?</label>
                     <select id="destino" name="destino" required>
                         <option value="">Selecciona una zona</option>
@@ -53,30 +62,30 @@
                     </select>
 
                     <p>¿Cómo desea que contactemos con usted?</p>
-                    <input type="radio" id="email" name="contacto" value="email" required>
-                    <label for="email">Correo electronico</label>
+                    <input type="radio" id="contacto-email" name="contacto" value="email" required>
+                    <label for="contacto-email">Correo electrónico</label>
 
-                    <input type="radio" id="tlf" name="contacto" value="tlf">
-                    <label for="tlf">Teléfono</label>
+                    <input type="radio" id="contacto-tlf" name="contacto" value="tlf">
+                    <label for="contacto-tlf">Teléfono</label>
 
-                    <input type="radio" id="otros" name="contacto" value="otros">
-                    <label for="otros">Otro</label>
+                    <input type="radio" id="contacto-otro" name="contacto" value="otros">
+                    <label for="contacto-otro">Otro</label>
 
                     <p>¿Qué tipo de consulta quieres realizar?</p>
-                    <input type="checkbox" id="viaje" name="actividades" value="viaje">
-                    <label for="viaje">Viaje | Hotel</label>
+                    <input type="checkbox" id="consulta-viaje" name="actividades" value="viaje">
+                    <label for="consulta-viaje">Viaje y Hotel</label>
 
-                    <input type="checkbox" id="Ocio" name="actividades" value="Ocio">
-                    <label for="Ocio">Ocio | Gastronomia</label>
+                    <input type="checkbox" id="consulta-ocio" name="actividades" value="Ocio">
+                    <label for="consulta-ocio">Ocio y Gastronomía</label>
 
-                    <input type="checkbox" id="otros" name="actividades" value="otros">
-                    <label for="otros">Otros Servicios</label>
+                    <input type="checkbox" id="consulta-otros" name="actividades" value="otros">
+                    <label for="consulta-otros">Otros Servicios</label>
                 </fieldset>
 
                 <fieldset>
                     <legend>¿En qué podemos ayudarte?</legend>
                     <label for="mensaje">Haznos saber tu duda</label>
-                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                 </fieldset>
 
                 <button type="submit">Enviar consulta</button>
@@ -85,7 +94,9 @@
     </main>
 
     <footer>
+        <a href="noticias.xml">Noticias Destacadas sobre Mongolia.</a>
         <p>&copy; 2026 Mongolia Aventura</p>
     </footer>
 </body>
+
 </html>

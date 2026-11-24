@@ -1,93 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mongolia</title>
-    <link rel="icon" type="Imagenes/favicom.png" sizes="32x32" href="Imagenes/favicom.png">
+    <link rel="icon" type="image/png" href="Imagenes/favicom.webp">
     <link rel="apple-touch-icon" href="Imagenes/icono.png">
-    <meta name="descripcion"
+    <meta name="description"
         content="En esta Web encontrarás qué visitar en mongolia, qué rutas recorrer, como son sus gentes y su cultura. ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="alternate" type="application/rss+xml" href="noticias.xml">
 </head>
 
 <body>
     <header>
-        <h1>Turismo en Mongolia</h1>
-        <p>Descubre un país de grandes paisajes, tradiciones y naturaleza.</p>
-        <nav>
-            <a href="Ocio.html">Ocio</a>
-            <a href="Fauna.html">Fauna y Gastronomia</a>
-            <a href="SobreNosotros.html">Quienes somos</a>
-            <a href="Contacto.html">Contacto</a>
-        </nav>
+        <div class="titulo">
+            <h1>TURISMO EN MONGOLIA</h1>
+        </div>
     </header>
+    <nav>
+        <a href="Ocio.html">Ocio</a>
+        <a href="FaunayGastronomia.html">Fauna y Gastronomia</a>
+        <a href="noticias.xml">Noticias</a>
+        <a href="SobreNosotros.html">Quienes somos</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="https://es.wikipedia.org/wiki/Mongolia" target="_blank" rel="noopener">Info Externa.</a>
+    </nav>
     <main>
-        <section>
-            <h2>Bienvenidos a Mongolia</h2>
-            <p>Mongolia es un país situado en Asia central y oriental, conocido por sus extensas estepas, el desierto
-                del Gobi y sus tradiciones nómadas. Es un destino para quienes buscan naturaleza, aventura y conocer
-                otras formas de vida.</p>
-        </section>
+
 
         <section>
-            <h2>¿Qué puedes descubrir?</h2>
-            <ul>
-                <li>La cultura y las tradiciones del pueblo mongol.</li>
-                <li>Los paisajes del desierto del Gobi y las montañas del Altái.</li>
-                <li>La fauna que habita en las estepas, montañas y bosques.</li>
-                <li>La gastronomía tradicional y sus productos lácteos.</li>
-            </ul>
+            <div class="Bienvenidos">
+                <h2>Bienvenidos a Mongolia</h2>
+                <p>Mongolia es un país situado en Asia central y oriental, conocido por sus extensas estepas, el
+                    desierto
+                    del Gobi y sus tradiciones nómadas. Es un destino para quienes buscan naturaleza, aventura y
+                    conocer
+                    otras formas de vida.</p>
+            </div>
+
         </section>
 
-        <section>
-            <h2>Ideas para preparar tu viaje</h2>
-            <ol>
-                <li>Elegir la época del año y la duración del viaje.</li>
-                <li>Seleccionar las regiones que quieres visitar.</li>
-                <li>Preparar la ruta y el alojamiento.</li>
-                <li>Consultar las recomendaciones de viaje y la documentación necesaria.</li>
-            </ol>
+        <div class="argumentoGlobal">
+
+            <img class="imagenArgumento" src="Imagenes/cabras.webp" alt="cabras en Mongolia" loading="lazy">
+
+            <div class="argumentoGlobalTexto">
+
+                <h2>Por qué viajar a Mongolia con MongoliaAventura </h2>
+                <ul>
+                    <li>
+                        <h3>Itinerario exclusivo diseñado por nuestro equipo experto</h3>
+                    </li>
+                    <li>
+                        <h3>Viaje en grupo reducido (máx. 12 personas)</h3>
+                    </li>
+                    <li>
+                        <h3>Acompañamiento de guía local de habla hispana</h3>
+                    </li>
+                    <li>
+                        <h3>Experiencia 100% auténtica y responsable. Durmiendo junto a comunidades nómadas</h3>
+                    </li>
+                </ul>
+
+                <p>En MongoliaAventura apostamos por un turismo respetuoso, que va más allá de lo turístico para
+                    conectar con la esencia de los lugares.</p>
+            </div>
+
+        </div>
+        <section class="galeria">
+            <h3>Galeria de Imagenes.</h3>
+            <div class="grid-galeria">
+                <img src="Imagenes/mongol_gobi.webp" alt="Desierto del Gobi" loading="lazy">
+                <img src="Imagenes/MontañasAltai.webp" alt="Zona de montañas del Altái" loading="lazy">
+                <img src="Imagenes/estepaCentral.webp" alt="Zona de llanuras o estepas centrales" loading="lazy">
+            </div>
+
         </section>
 
-        <section>
-            <h2>Algunas regiones de Mongolia</h2>
-            <table>
-                <caption>Regiones y paisajes destacados</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Región</th>
-                        <th scope="col">Paisaje</th>
-                        <th scope="col">Qué descubrir</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desierto del Gobi</td>
-                        <td>Desierto y zonas áridas</td>
-                        <td>Dunas, acantilados y camellos</td>
-                    </tr>
-                    <tr>
-                        <td>Montañas del Altái</td>
-                        <td>Montañas y valles</td>
-                        <td>Senderismo y fauna de montaña</td>
-                    </tr>
-                    <tr>
-                        <td>Estepas centrales</td>
-                        <td>Llanuras y praderas</td>
-                        <td>Ganadería tradicional y campamentos ger</td>
-                    </tr>
-                    <tr>
-                        <td>Norte de Mongolia</td>
-                        <td>Bosques y lagos</td>
-                        <td>Naturaleza y cultura de la taiga</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+
     </main>
     <footer>
+        <a href="noticias.xml">Noticias Destacadas sobre Mongolia.</a>
         <p>&copy; 2026 Turismo en Mongolia</p>
     </footer>
 </body>

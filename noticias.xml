@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Noticias de Mongolia Aventura</title>
+        <link>https://www.mongoliaaventura.com</link>
+        <description>Últimas novedades, rutas y experiencias de Mongolia Aventura.</description>
+        <language>es-ES</language>
+
+        <item>
+            <title>Nuevas rutas por el desierto del Gobi</title>
+            <description>Incorporamos nuevas propuestas para descubrir las dunas y los paisajes del desierto del Gobi.</description>
+            <link>https://www.mongoliaaventura.com/Ocio.html</link>
+            <pubDate>Tue, 01 Sep 2026 09:00:00 +0200</pubDate>
+        </item>
+
+        <item>
+            <title>Nuevas experiencias de naturaleza en Mongolia</title>
+            <description>Ampliamos nuestra información sobre fauna, observación de animales y paisajes naturales.</description>
+            <link>https://www.mongoliaaventura.com/FaunayGastronomia.html</link>
+            <pubDate>Wed, 02 Sep 2026 10:30:00 +0200</pubDate>
+        </item>
+
+        <item>
+            <title>Actualización de nuestra sección de contacto</title>
+            <description>Hemos mejorado la sección de contacto para facilitar las consultas de nuestros visitantes.</description>
+            <link>https://www.mongoliaaventura.com/Contacto.html</link>
+            <pubDate>Thu, 03 Sep 2026 12:00:00 +0200</pubDate>
+        </item>
+    </channel>
+</rss>
